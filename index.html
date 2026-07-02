@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danger Game - 危险游戏</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">DANGER</span>
+                <span class="logo-text-accent">GAME</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">游戏介绍</a></li>
+                <li><a href="#controls" class="nav-link">操作说明</a></li>
+                <li><a href="#gallery" class="nav-link">截图画廊</a></li>
+                <li><a href="#download" class="nav-link download-btn">下载游戏</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="assets/trailer.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="video-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title">
+                    <span class="title-part title-part-1">DANGER</span>
+                    <br>
+                    <span class="title-part title-part-2">GAME</span>
+                </h1>
+                <div class="title-glow"></div>
+            </div>
+            <p class="hero-subtitle">危险即将来临，你准备好了吗？</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">立即下载</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>向下滚动</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">游戏介绍</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        欢迎来到《Danger Game》！这是一款令人毛骨悚然的找异常游戏。支持中英文，你将扮演一名宿管，负责确保宿舍的安全。
+                    </p>
+                    <p class="about-paragraph">
+                        你的任务是仔细检查每个房间，寻找任何不对劲的地方。如果发现异常，必须留在原来的床睡觉；如果一切正常，则前往对面房间睡觉。每一个决定都可能关乎生死！
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3 class="feature-title">寻找异常</h3>
+                        <p class="feature-desc">仔细观察每个细节，发现隐藏的异常</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛏️</div>
+                        <h3 class="feature-title">生死抉择</h3>
+                        <p class="feature-desc">发现异常留原床，正常则去对面房间</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚪</div>
+                        <h3 class="feature-title">随机布局</h3>
+                        <p class="feature-desc">异常关卡的布局可能与正常关卡不同</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-title">关卡递进</h3>
+                        <p class="feature-desc">过关后门牌号增加，难度逐渐提升</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="controls" class="controls">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">操作说明</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <div class="control-key">W</div>
+                    <div class="control-key">A</div>
+                    <div class="control-key">S</div>
+                    <div class="control-key">D</div>
+                    <span class="control-desc">移动</span>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">🖱️</div>
+                    <span class="control-desc">视角</span>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">Shift</div>
+                    <span class="control-desc">奔跑</span>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">F</div>
+                    <span class="control-desc">互动</span>
+                </div>
+            </div>
+            <div class="notes-box">
+                <h3 class="notes-title">⚠️ 注意事项</h3>
+                <ul class="notes-list">
+                    <li>异常关卡的布局可能与正常关卡不同</li>
+                    <li>如果睡错床，将重置关卡</li>
+                    <li>如果过关门牌号会加1</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">游戏截图</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="assets/screenshot-1.png" alt="游戏截图 1">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">01</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="assets/screenshot-2.png" alt="游戏截图 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">02</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="assets/screenshot-3.png" alt="游戏截图 3">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">03</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="assets/screenshot-4.png" alt="游戏截图 4">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">04</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="assets/screenshot-5.png" alt="游戏截图 5">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">05</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="assets/screenshot-6.png" alt="游戏截图 6">
+                    <div class="gallery-overlay">
+                        <span class="gallery-number">06</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">准备好迎接挑战了吗？</h2>
+                    <p class="download-desc">立即下载《Danger Game》，开启你的冒险之旅！</p>
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-icon">📁</span>
+                            <span class="info-text">大小: 2.5 GB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🎮</span>
+                            <span class="info-text">支持平台: Windows</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">⭐</span>
+                            <span class="info-text">评分: 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-buttons">
+                    <a href="DangerGame.zip" download class="download-btn-main" id="direct-download-btn">
+                        <span class="btn-icon">⬇️</span>
+                        <span class="btn-text">直接下载游戏</span>
+                        <span class="btn-badge">免费</span>
+                    </a>
+                    <a href="https://pan.quark.cn/s/1107c23b0ba6" class="download-btn-secondary" target="_blank" rel="noopener noreferrer" id="quark-btn">
+                        <span class="btn-icon">🔮</span>
+                        <span class="btn-text">夸克网盘下载</span>
+                        <span class="btn-badge">推荐</span>
+                    </a>
+                    <a href="https://cloud.189.cn/t/3eumauyaUN7b" class="download-btn-secondary" target="_blank" rel="noopener noreferrer" id="tianyi-btn">
+                        <span class="btn-icon">☁️</span>
+                        <span class="btn-text">天翼云盘下载</span>
+                        <span class="btn-badge">备用</span>
+                    </a>
+                    <p class="download-note">天翼云盘访问码：<span class="access-code">ug4d</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">DANGER</span>
+                    <span class="logo-text-accent">GAME</span>
+                </div>
+                <p class="footer-copyright">© 2026 Danger Game. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#about">游戏介绍</a>
+                    <a href="#gallery">截图画廊</a>
+                    <a href="#download">下载</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="全屏图片">
+        </div>
+        <button class="lightbox-close" id="lightbox-close">×</button>
+        <button class="lightbox-prev" id="lightbox-prev">‹</button>
+        <button class="lightbox-next" id="lightbox-next">›</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
